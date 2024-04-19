@@ -1,13 +1,51 @@
 package com.lewis.controller;
 
-import org.springframework.stereotype.Controller; 
+<<<<<<< Upstream, based on 789611abbd9d891b2f0bc21ba19788e223dec94d
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+=======
+import org.springframework.web.bind.annotation.GetMapping;
+>>>>>>> 87c6ec8 init project
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+<<<<<<< Upstream, based on 789611abbd9d891b2f0bc21ba19788e223dec94d
+import com.lewis.service.HelloService;
+
+=======
+>>>>>>> 87c6ec8 init project
+@RestController
 public class HelloContoller {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+<<<<<<< Upstream, based on 789611abbd9d891b2f0bc21ba19788e223dec94d
+	@Autowired
+	private HelloService helloService;
+	
+	@GetMapping("/get")
+	public String hello() {
+		return helloService.getHello();
+=======
+	@GetMapping("/good")
+	public String hello() {
+		return "good job";
+>>>>>>> 87c6ec8 init project
 	}
 
+	@PostMapping("/post")
+	public String addHello() {
+		return "Post123";
+	}
+	
+	@PutMapping("/put")
+	public String putHello() {
+		return "put";
+	}
+	
+	@DeleteMapping("/del")
+	public String delHello() {
+		return "del";
+		
+	}
 }
