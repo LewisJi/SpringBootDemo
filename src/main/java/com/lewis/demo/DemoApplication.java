@@ -6,15 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(
 	    scanBasePackages={
 	            "com.lewis.demo",
-<<<<<<< HEAD
-<<<<<<< Upstream, based on 789611abbd9d891b2f0bc21ba19788e223dec94d
 	            "com.lewis"
-=======
-	            "com.lewis.controller"
->>>>>>> 87c6ec8 init project
-=======
-	            "com.lewis"
->>>>>>> branch 'main' of https://github.com/LewisJi/SpringBootDemo.git
 	        }
 	    )
 public class DemoApplication {
