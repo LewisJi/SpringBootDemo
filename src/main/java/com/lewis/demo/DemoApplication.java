@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(
 	    scanBasePackages={
 	            "com.lewis.demo",
-	            "com.lewis.controller"
+	            "com.lewis"
 	        }
 	    )
 public class DemoApplication {
