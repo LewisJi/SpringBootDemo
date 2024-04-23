@@ -1,13 +1,14 @@
 package com.lewis.controller;
 
-import org.springframework.stereotype.Controller; 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class HelloContoller {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	@GetMapping("/good")
+	public String hello() {
+		return "good job";
 	}
 
 }
