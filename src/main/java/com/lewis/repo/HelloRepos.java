@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 public class HelloRepos {
 	
 	public String qryHello() {
-		return "hello !";
+		return "hello world!";
 	}
 
 }
